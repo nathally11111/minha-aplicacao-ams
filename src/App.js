@@ -8,15 +8,16 @@ function App() {
   return (
     <Router>
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/sobre">Sobre</Link>
+        <Link to="/Contato">Home</Link>
+        <Link to="/Produto">Sobre</Link>
       </nav>
 
     <div style={{ textAlign: 'center' }}>
      <h1>Site em React</h1>
     </div>
     <Routes>
-    <Route path="/" element={<Home/>} />
+    <Route path="/Contato" element={<Contato/>} />
+    <Route path="/Produtos" element={<Produtos/>} />
     </Routes>
   
     </Router>
