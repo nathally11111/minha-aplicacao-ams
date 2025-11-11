@@ -1,7 +1,79 @@
+:root{
+    --purple-900: #2b0066;
+    --purple-700: #5a189a;
+    --purple-500: #7b2cbf;
+    --purple-300: #9d4edd;
+    --accent: #c77dff;
+    --muted-bg: #f7f3fb;
+}
+
 body, html{
-    background-color: #cccccc;
+    background: linear-gradient(180deg, var(--muted-bg) 0%, #efe8fb 100%);
     margin:0;
     padding:0;
     width: 100%;
     height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    color: #2a2a2a;
+}
+
+.navbar-purple{
+    background: linear-gradient(90deg, var(--purple-700), var(--purple-500));
+}
+.navbar-purple .navbar-brand{
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+.navbar-purple .nav-link{
+    color: rgba(255,255,255,0.9) !important;
+}
+.navbar-purple .nav-link.active{
+    color: var(--accent) !important;
+    font-weight: 600;
+}
+
+.container-main{
+    padding-top: 2rem;
+}
+
+.card-purple{
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(88,20,140,0.12);
+    overflow: hidden;
+}
+.card-purple .card-header{
+    background: linear-gradient(90deg, var(--purple-500), var(--purple-300));
+    color: white;
+    font-weight: 700;
+}
+
+.btn-primary.custom{
+    background: linear-gradient(90deg,var(--purple-700),var(--purple-500));
+    border: none;
+}
+.btn-primary.custom:hover{
+    background: linear-gradient(90deg,var(--purple-900),var(--purple-700));
+}
+
+label{
+    font-weight:600;
+}
+
+input.form-control, textarea.form-control{
+    border-radius: 8px;
+    border: 1px solid #e6dff5;
+}
+
+table.table thead{
+    background: linear-gradient(90deg, var(--purple-700), var(--purple-500));
+    color: white;
+}
+
+footer.site-footer{
+    margin-top: 3rem;
+    padding: 1.5rem 0;
+    text-align: center;
+    color: #6b4b9a;
 }
